@@ -5,7 +5,7 @@ char[] chrAlfabeto = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L
 string strCifradoFinal = "";
 Console.WriteLine("Cifrado");
 Console.WriteLine("");
-char Repeticion;
+char Repeticion = 'S';
 int intOption;
 
 do
@@ -13,7 +13,12 @@ do
     Console.WriteLine("Ingrese la opcion (Numero) a realizar:\n" +
         "[1] Cifrar \n" +
         "[2] Descifrar\n");
-    intOption = int.Parse(Console.ReadLine());
+    if (!int.TryParse(Console.ReadLine(), out intOption))
+    {
+        // Si la entrada no es un número, mostrar un mensaje de error y volver al inicio del bucle
+        Console.WriteLine("Error: Ingrese un número válido.");
+        continue;
+    }
     switch (intOption)
     {
         case 1:
@@ -149,9 +154,8 @@ do
             }
 
     }
-    Console.ReadKey();
-    Console.WriteLine("Desea hacer otra opcion \n S / N");
-    Repeticion = char.Parse(Console.ReadLine().ToUpper());
+    Console.WriteLine("\n¿Desea realizar otra operación? (S/N): ");
+    Repeticion = char.ToUpper(Console.ReadKey().KeyChar);
     Console.Clear();
 
 } while (Repeticion == 'S');
