@@ -83,6 +83,7 @@ do
                 {
                     for (int fila = 0; fila < fragmentoLength; fila++)
                     {
+                        //condition ? consequent : alternative
                         chrMensajeCifrado[fila, columna] = (inputIndex < strMensajeCifrado.Length) ? strMensajeCifrado[inputIndex++] : 'X';
                     }
                 }
