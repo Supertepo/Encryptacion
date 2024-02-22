@@ -86,6 +86,9 @@ do
                         chrMensajeCifrado[fila, columna] = strMensajeCifrado[inputIndex++];
                     }
                 }
+                // llenar con x automaticamente al descifrar 
+                //importante
+
 
                 // Crear un array para almacenar el orden de las letras de la palabra clave
                 char[] ordenPalabraClave = new char[strClave.Length];
