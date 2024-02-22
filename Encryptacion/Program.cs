@@ -83,12 +83,11 @@ do
                 {
                     for (int fila = 0; fila < fragmentoLength; fila++)
                     {
-                        chrMensajeCifrado[fila, columna] = strMensajeCifrado[inputIndex++];
+                        chrMensajeCifrado[fila, columna] = (inputIndex < strMensajeCifrado.Length) ? strMensajeCifrado[inputIndex++] : 'X';
                     }
                 }
                 // llenar con x automaticamente al descifrar 
                 //importante
-
 
                 // Crear un array para almacenar el orden de las letras de la palabra clave
                 char[] ordenPalabraClave = new char[strClave.Length];
