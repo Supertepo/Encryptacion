@@ -7,6 +7,6 @@ Se tiene que ir __encriptado__ en una matriz segun una palabra clave y debes de 
 Para __desencriptar__ segun la longitud del mensaje se divide entre la longitud de la palabra clave para tener la longitud de las columans de la matriz  
 ![Imagen demostrativa de como se ve la division](image-1.png)   
 ### Llenando la matriz
-Al ya tener la longitud de las columnas(cuantas filas se tienen que hacer) se va lleando en el orden de la palabra, tambien hay que tener en cuenta si se llega a repetir una letra 
+Al ya tener la longitud de las columnas(cuantas filas se tienen que hacer) se va lleando en el orden de la palabra, tambien hay que tener en cuenta si se llega a repetir una letra  
 ![Imagen demostrativa de la matriz ya llena](image-2.png)
 
